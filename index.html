@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new event - Olidana</title>
+
+    <link rel = "stylesheet" href = "validation.css">
+    <script src = "validation.js"></script>
+
+</head>
+<body>
+    <!--Ma.Donna Rose M. Olidana 2ITG-->
+    
+    <div>
+    <form>
+        <table>
+            <tr>
+                <td class = "row1">
+                    <label for = "eventType">Event type : </label>
+                </td>
+                <td>
+                    <select name="Event Types" value="Choose One">
+                        <Option>Option 1</Option>
+                        <Option>Option 2</Option> 
+                        <Option>Option 3</Option>  
+                        <Option>Option 4</Option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "row1">
+                    <label for = "eventTitle">Event Title : </label>
+                </td>
+                <td>
+                    <input type = "text" name = "ETitle" id = "eventTitle" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class = "row1">
+                    <label for = "eventDates">Event Dates : </label>
+                </td>
+                <td>
+                    <input type = "date" name = "EDate1" id = "eventDates1" required> to 
+                    <input type = "date" name = "EDate2" id = "eventDates2" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "row1">
+                    <label for = "postingDate">Posting Date : </label>
+                </td>
+                <td>
+                    <input type = "date" name = "PDate" id = "postingDate" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <input type="checkbox" id="C1" name="C1">
+        <label for="C1"> Is Registration required?</label><br>
+
+        <input type="checkbox" id="C2" name="C2">
+        <label for="C2"> Is this event associated with any Family Programs?</label><br>
+  
+        <input type="checkbox" id="C3" name="C3">
+        <label for="C3"> Upon Registration Completion, Are users to Receive an Auto Generated Email?</label><br>
+  
+        <input type="checkbox" id="C4" name="C4">
+        <label for="C4"> Is there a Point of Contact</label><br>
+
+        <input type="checkbox" id="C5" name="C5">
+        <label for="C5"> Is there a Hosting Command Point of Contact?</label><br><br>
+
+        <div class = "buttons">
+        <button type="submit" value="Save" onclick = "validate()">Save</button>
+        <button type="reset" value="Reset">Reset</button>
+        </div>
+                    
+    </form>
+    </div>
+</body>
+</html>
